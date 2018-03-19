@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>面试你-后台</title>
+
+    <!-- Bootstrap -->
+    <link href="/Interview/Public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/Interview/Public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/Interview/Public/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="/Interview/Public/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="/Interview/Public/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="/Interview/Public/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="/Interview/Public/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="/Interview/Public/vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="/Interview/Publicvendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/Interview/Public/build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+
+        <!-- body common -->
+        {include file="/public_input/body-common"}
+        <!-- /body common -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>2017春季招聘会</h3>
+              </div>
+
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="row">
+
+              <div class="col-md-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left">
+                      <div class="form-group">
+                        <label class="control-label col-md-1 col-sm-1 col-xs-12">请选择省</label>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                          <select class="form-control">
+                            <option>Choose option</option>
+                            <option>Option one</option>
+                            <option>Option two</option>
+                            <option>Option three</option>
+                            <option>Option four</option>
+                          </select>
+                        </div>
+                        <label class="control-label col-md-1 col-sm-1 col-xs-12">请选择高校</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                          <select class="select2_single form-control" tabindex="-1">
+                            <option></option>
+                            <option value="AK">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CO">Colorado</option>
+                            <option value="ID">Idaho</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="UT">Utah</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TX">Texas</option>
+                          </select>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 ">
+                         <button type="submit" class="btn btn-success">确定</button>
+                        </div>
+                      </div>
+                      <!--<div class="form-group">-->
+                        <!--<label class="control-label col-md-3 col-sm-3 col-xs-12">Switch</label>-->
+                        <!--<div class="col-md-9 col-sm-9 col-xs-12">-->
+                          <!--<div class="">-->
+                            <!--<label>-->
+                              <!--<input type="checkbox" class="js-switch" checked /> Checked-->
+                            <!--</label>-->
+                          <!--</div>-->
+                          <!--<div class="">-->
+                            <!--<label>-->
+                              <!--<input type="checkbox" class="js-switch" /> Unchecked-->
+                            <!--</label>-->
+                          <!--</div>-->
+                          <!--<div class="">-->
+                            <!--<label>-->
+                              <!--<input type="checkbox" class="js-switch" disabled="disabled" /> Disabled-->
+                            <!--</label>-->
+                          <!--</div>-->
+                          <!--<div class="">-->
+                            <!--<label>-->
+                              <!--<input type="checkbox" class="js-switch" disabled="disabled" checked="checked" /> Disabled Checked-->
+                            <!--</label>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                      <!--</div>-->
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- page content -->
+              <div class="col-md-12 col-xs-12">
+                <div class="">
+                  <div class="page-title">
+                    <div class="title_left">
+                      <h3> 简历<small> 右侧可更改单包数量</small> </h3>
+                    </div>
+
+                    <div class="title_right">
+                      <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="x_panel">
+                        <div class="x_title">
+                          <h2>简历包 <small> </h2>
+                          <ul class="nav navbar-right panel_toolbox">
+
+                          </ul>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+
+                          <div class="row">
+
+
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <h3>  001号 50份  30未读</small> </h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /page content -->
+
+              <!-- page content -->
+              <div class="col-md-12 col-xs-12">
+                <div class="">
+                  <div class="page-title">
+                    <div class="title_left">
+                      <h3> 通过筛选的简历<small> 右侧可更改单包数量</small> </h3>
+                    </div>
+
+                    <div class="title_right">
+                      <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="x_panel">
+                        <div class="x_title">
+                          <h2>简历包 <small> </h2>
+                          <ul class="nav navbar-right panel_toolbox">
+
+                          </ul>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                          <div class="row">
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <h3>  001号 50份  30未读</small> </h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /page content -->
+
+              <!-- page content -->
+              <div class="col-md-12 col-xs-12">
+                <div class="">
+                  <div class="page-title">
+                    <div class="title_left">
+                      <h3> 已放弃的简历 <small> 右侧可更改单包数量</small> </h3>
+                    </div>
+
+                    <div class="title_right">
+                      <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="x_panel">
+                        <div class="x_title">
+                          <h2>简历包 <small> </h2>
+                          <ul class="nav navbar-right panel_toolbox">
+
+                          </ul>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                          <div class="row">
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <h3>  001号 50份  30未读</small> </h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-55">
+                              <div class="thumbnail">
+                                <div class="image view view-first">
+                                  <img style="width: 100%; display: block;" src="images/media.jpg" alt="image" />
+                                  <div class="mask">
+                                    <p>Your Text</p>
+                                    <div class="tools tools-bottom">
+                                      <a href="#"><i class="fa fa-link"></i></a>
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-times"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="caption">
+                                  <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /page content -->
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        {include file="/public_input/footer"}
+        <!-- /footer content -->
+
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/Interview/Public/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/Interview/Public/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/Interview/Public/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/Interview/Public/vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/Interview/Public/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="/Interview/Public/vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="/Interview/Public/vendors/moment/min/moment.min.js"></script>
+    <script src="/Interview/Public/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="/Interview/Public/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="/Interview/Public/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="/Interview/Public/vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="/Interview/Public/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="/Interview/Public/vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="/Interview/Public/vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="/Interview/Public/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="/Interview/Public/vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="/Interview/Public/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="/Interview/Public/vendors/starrr/dist/starrr.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="/Interview/Public/build/js/custom.min.js"></script>
+	
+  </body>
+</html>
