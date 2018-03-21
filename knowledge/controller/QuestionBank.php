@@ -56,7 +56,30 @@ class QuestionBank
         
 
         return json_encode($result);
-	}
+    }
+    
+    //添加题目
+    public function add()
+    {
+        $question_content = input('post.question');
+        $question_answer = input('post.answer');
+        $question_type = input('post.type');
+        $question_course = input('post.course');
+        
+        $Q = db('bank_question');
+        
+        $emap['question_content'] = $question_content;
+        $emap['question_type'] = $question_type;
+        $emap['question_course'] = $question_course;
+        $emap['create_time'] = date('Y-m-d G:i:s');
+        $emap['question_answer'] = $question_answer;
+        $Q->insert($emap);
+
+        $result['err_code'] = 0;
+          $result['err_msg'] = "成功";
+        
+        return json_encode($result);
+    }
 
 }
 ?> 
