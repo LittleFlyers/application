@@ -26,7 +26,7 @@ class Bankquestion
     //获取题目详细信息
     public function one()
     {
-        $question_id = input('post.question_id');
+        /*$question_id = input('post.question_id');
         $Q = db('bank_question');
         $A = db('bank_question_answer');
         $Qi = db('bank_question_img');
@@ -38,8 +38,14 @@ class Bankquestion
         $result['err_code'] = 0;
         $result['qcontent'] = $question_list;
         $result['acontent'] = $answer_list;
-        $result['mcontent'] = $question_img_list;
-
+        $result['mcontent'] = $question_img_list;*/
+        $question_id = input('post.question_id');
+        $Q = db('bank_question');
+        $check['question_id'] = $question_id;
+        $question_list = $Q -> where($check) -> select();
+        $result['err_code'] = 0;
+        $result['qcontent'] = $question_list;
+        
         return json_encode($result);
     }
 
