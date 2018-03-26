@@ -72,9 +72,22 @@ class Paper
     {
         $paper_title = input('post.title');
         $paper_data = json_decode(input('post.paper_data'), true);
+        $emap['paper_title'] = $paper_title;
+        $emap['paper_author'] = "张鹏飞";
+        $emap['create_time'] = date('Y-m-d G:i:s');
+        $emap['paper_type'] = "计算机组成原理";
+        $P = db('paper');
+        $id = $P->insertGetId($emap);
+        $PQ = db('paper_question');
+        foreach($paper_data as $question_id => $score){
+            $emapQ['paper_id'] = $id;
+            $emapQ['question_id'] = $question_id;
+            $emapQ['score'] = $score;
+            $PQ -> insert($emapQ);
+        }
+
         $result['err_code'] = 0;
-        $result['data'] = $paper_title;
-        $result['paper'] = $paper_data['2'];
+        $result['data'] = $id;
 
         return json_encode($result);
     }
