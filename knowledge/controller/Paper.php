@@ -70,10 +70,9 @@ class Paper
     //添加试卷
     public function add()
     {
-        $user_id = input('post.user_id');
-        $paper_title = input('post.paper_title');
-        $paper_type = input('post.paper_type');
-        $paper_question = input('post.paper_question');
+        $paper_title = input('post.title');
+        $result['err_code'] = 0;
+        $result['data'] = $paper_title;
     }
 }
 ?>
