@@ -1,5 +1,5 @@
 <?php
-namespace app\knowledge\coontroller;
+namespace app\knowledge\controller;
 
 class Paper
 {

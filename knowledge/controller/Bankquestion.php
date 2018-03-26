@@ -39,7 +39,7 @@ class Bankquestion
         $result['qcontent'] = $question_list;
         $result['acontent'] = $answer_list;
         $result['mcontent'] = $question_img_list;*/
-        $question_id = input('post.question_id');
+        $question_id = input('get.question_id');
         $Q = db('bank_question');
         $check['question_id'] = $question_id;
         $question_list = $Q -> where($check) -> select();
