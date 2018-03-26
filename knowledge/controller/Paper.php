@@ -73,6 +73,8 @@ class Paper
         $paper_title = input('post.title');
         $result['err_code'] = 0;
         $result['data'] = $paper_title;
+
+        return json_encode($result);
     }
 }
 ?>
