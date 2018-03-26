@@ -71,10 +71,10 @@ class Paper
     public function add()
     {
         $paper_title = input('post.title');
-        $paper_data = input('post.paper_data');
+        $paper_data = json_decode(input('post.paper_data'), true);
         $result['err_code'] = 0;
         $result['data'] = $paper_title;
-        $result['paper'] = $paper_data;
+        $result['paper'] = $paper_data['2'];
 
         return json_encode($result);
     }
