@@ -25,7 +25,7 @@ class Paper
     //获取单个试卷(无答案)
     public function one()
     {
-        $paper_id = intput('post.paper_id');
+        $paper_id = $_GET['paper_id'];
         $P = db('paper');
         $PQ = db('paper_question');
         $Q = db('bank_question');
@@ -44,7 +44,7 @@ class Paper
     //获取单个试卷含答案
     public function oneAnswer()
     {
-        $paper_id = input('post.paperId');
+        $paper_id = $_POST['paper_id'];;
         $P = db('paper');
         $PQ = db('paper_question');
         $Q = db('bank_question');
