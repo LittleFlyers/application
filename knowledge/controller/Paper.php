@@ -126,5 +126,36 @@ class Paper
 
         return json_encode($result);
     }
+     /***学生回答问题 */
+    public function answer()
+    {
+         $user_id = input('post.user_id');
+         $paper_id = input('post.paper_id');
+         $question_answer = json_decode(input('post.question_answer'), true);
+         $SA = db('student_answer');
+         $date = date('Y-m-d G:i:s');
+         $i=0;
+        /* for($i =0;$i<count($question_answer);$i++)
+         {
+            $emap['user_id'] = $user_id;
+            $emap['paper_id'] = $paper_id;
+            $emap['create_time'] = $date;
+            $emap['question_id'] = $answer['question_id'];
+            $SA -> insert($emap);
+
+         }*/
+         foreach($question_answer as $answer)
+         {
+             $emap['user_id'] = $user_id;
+             $emap['paper_id'] = $paper_id;
+             $emap['question_id'] = $answer['question_id'];
+             $emap['answer'] = $answer['question_answer'];
+             $emap['create_time'] = $date;
+             $SA -> insert($emap);
+        }
+         $result['err_code'] = 0;
+         $result['err_msg'] = $question_answer;
+         return json_encode($result);
+     }
 }
 ?>
