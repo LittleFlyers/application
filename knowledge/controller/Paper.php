@@ -133,6 +133,7 @@ class Paper
          $paper_id = input('post.paper_id');
          $question_answer = json_decode(input('post.question_answer'), true);
          $SA = db('student_answer');
+         $SP = db('student_paper');
          $date = date('Y-m-d G:i:s');
          $i=0;
         /* for($i =0;$i<count($question_answer);$i++)
@@ -144,6 +145,13 @@ class Paper
             $SA -> insert($emap);
 
          }*/
+         $check['paper_id'] = $paper_id;
+         $check['user_id'] = $user_id;
+         $answer_count = $SP -> group('paper_id', 'user_id') -> where($check) -> count();
+         
+         $check['answer_count'] = $answer_count + 1;
+         $SP -> insert($check);
+
          foreach($question_answer as $answer)
          {
              $emap['user_id'] = $user_id;
