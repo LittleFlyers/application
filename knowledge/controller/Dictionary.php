@@ -71,7 +71,7 @@ class Dictionary{
         if($info){
             
 			$img_url = $info->getSaveName();
-			$img_url = 'https://mogujie.kuanxy.com/InterviewAdd/uploads'.'/'.$img_url;
+			$img_url = 'http://47.95.250.74/thinkphp/uploads'.'/'.$img_url;
 			$img_url = str_replace(DS,'/',$img_url);
 			$WI = db('word_img');
 			$emap['img_url'] = $img_url;
